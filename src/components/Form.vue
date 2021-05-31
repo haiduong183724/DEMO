@@ -1,5 +1,5 @@
 .<template>
-  <div class="form-wraper">
+  <div class="form-wraper" :class="{'show':isShow}">
       <div class="form-content">
             <div class="form-header">
                 <div class="left-header item-center">
@@ -15,7 +15,7 @@
                 </div>
                 <div class="right-header">
                     <div class="pop-up-close">
-                        <i class="material-icons">
+                        <i class="material-icons" v-on:click="function(){isShow = false}">
                             close
                         </i>
                         <i class="material-icons">
@@ -169,7 +169,12 @@
 <script>
 
 export default {
-
+data(){
+    return{
+        employee:null,
+        isShow:true,
+    }
+}
 }
 </script>
 

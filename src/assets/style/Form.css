@@ -37,6 +37,7 @@
 .pop-up-close i{
     font-size: 24px;
     color: rgb(17, 17, 17);
+    cursor: pointer;
 }
 .pop-up-close i:first-child{
     margin-left: 5px;
